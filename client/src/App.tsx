@@ -5,6 +5,7 @@ import LandingHeader from './components/landing/LandingHeader'
 import TopNavBar from './components/app-bar/TopNavBar';
 import AboutSection from './components/about/AboutSection';
 import FooterSection from './components/footer/FooterSection';
+import Blog from './components/blog/Blog';
 
 function App() {
   let theme = createMuiTheme({

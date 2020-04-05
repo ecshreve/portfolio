@@ -6,11 +6,14 @@ portfolio website project
 
 ### ui
 
-[] navbar
+[x] navbar
+[x] home page
+[ ] blog
+[ ] connect navbar to correct hrefs
 
 ### design
 
-[] pick color scheme
+[x] pick color scheme
 
 ## steps
 
