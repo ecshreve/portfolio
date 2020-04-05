@@ -5,7 +5,6 @@ import LandingHeader from './components/landing/LandingHeader'
 import TopNavBar from './components/app-bar/TopNavBar';
 import AboutSection from './components/about/AboutSection';
 import FooterSection from './components/footer/FooterSection';
-import ContactSection from './components/contact-section/ContactSection';
 
 function App() {
   let theme = createMuiTheme({
@@ -30,7 +29,6 @@ function App() {
         <TopNavBar />
         <LandingHeader />
         <AboutSection />
-        <ContactSection />
         <FooterSection />
       </div>
     </ThemeProvider>

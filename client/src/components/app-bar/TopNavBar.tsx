@@ -29,9 +29,8 @@ export default function TopNavBar() {
           <Typography align="left" variant="h6" className={classes.title}>
             shreve.dev
           </Typography>
-          <Button color="inherit">blog</Button>
           <Button color="inherit">about</Button>
-          <Button color="inherit">contact</Button>
+          <Button color="inherit">blog</Button>
         </Toolbar>
       </AppBar>
     </div>
