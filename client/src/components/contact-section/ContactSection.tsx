@@ -7,17 +7,16 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       flexGrow: 1,
-      paddingTop: "25px",
-      paddingBottom: "25px",
+      paddingTop: "50px",
+      paddingBottom: "50px",
       backgroundColor: theme.palette.primary.light,
     },
-    header: {
-      flexGrow: 1,
+    customLink: {
+      textDecoration: "none",
+    },
+    customText: {
       fontWeight: "bold",
     },
-    content: {
-      fontWeight: "bold",
-    }
   }),
 );
 
@@ -29,12 +28,14 @@ export default function ContactSection() {
       <Container>
         <Grid container>
           <Grid item xs={6}>
-            <Typography className={classes.header} variant="h4">Location</Typography>
-            <Typography className={classes.content} variant="h6">San Francisco</Typography>
+            <Typography className={classes.customText} variant="h4">Location</Typography>
+            <Typography className={classes.customText} variant="h6">San Francisco</Typography>
           </Grid>
           <Grid item xs={6}>
-            <Typography className={classes.header} variant="h4">Email</Typography>
-            <Typography className={classes.content} variant="h6">eric@shreve.dev</Typography>
+            <Typography className={classes.customText} variant="h4">Email</Typography>
+            <a className={classes.customLink} href="mailto:eric@shreve.dev" target="_blank">
+              <Typography className={classes.customText} variant="h6">eric@shreve.dev</Typography>
+            </a>
           </Grid>
         </Grid>
       </Container>

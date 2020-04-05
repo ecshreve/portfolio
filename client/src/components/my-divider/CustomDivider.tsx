@@ -14,11 +14,11 @@ const useStyles = makeStyles((theme: Theme) =>
     divider: {
       marginLeft: "40%",
       marginRight: "40%",
-      marginTop: "10px",
-      marginBottom: "10px",
-      height: ".25rem",
+      marginTop: "20px",
+      marginBottom: "20px",
+      height: "5px",
       backgroundColor: "white",
-      borderRadius: "1rem",
+      borderRadius: "16px",
     }
   }),
 );
