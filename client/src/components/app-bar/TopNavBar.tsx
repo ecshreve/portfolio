@@ -24,7 +24,7 @@ export default function TopNavBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar color="primary" position="static">
         <Toolbar>
           <Typography align="left" variant="h6" className={classes.title}>
             shreve.dev

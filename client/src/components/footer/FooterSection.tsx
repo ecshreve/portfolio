@@ -1,0 +1,31 @@
+import React from 'react';
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import { Typography, Container, Grid } from '@material-ui/core';
+import CustomDivider from '../my-divider/CustomDivider';
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      flexGrow: 1,
+      paddingTop: "5px",
+      paddingBottom: "5px",
+      backgroundColor: "#5d5c61",
+    },
+    footer: {
+      flexGrow: 1,
+      color: "#eeeeee",
+    },
+  }),
+);
+
+export default function FooterSection() {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <Container>
+        <Typography className={classes.footer} variant="body1">copyright &copy; shreve.dev 2019</Typography>
+      </Container>
+    </div>
+  );
+}
