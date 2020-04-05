@@ -1,7 +1,6 @@
 import React from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { Typography, Container, Grid } from '@material-ui/core';
-import CustomDivider from '../my-divider/CustomDivider';
+import { Typography, Container } from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
