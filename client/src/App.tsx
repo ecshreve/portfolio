@@ -1,11 +1,7 @@
 import React from 'react';
 import { MuiThemeProvider, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import './App.css';
-import LandingHeader from './components/landing/LandingHeader'
 import TopNavBar from './components/app-bar/TopNavBar';
-import AboutSection from './components/about/AboutSection';
-import FooterSection from './components/footer/FooterSection';
-import Blog from './components/blog/Blog';
 
 function App() {
   let theme = createMuiTheme({
@@ -28,9 +24,6 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <TopNavBar />
-        <LandingHeader />
-        <AboutSection />
-        <FooterSection />
       </div>
     </ThemeProvider>
   );

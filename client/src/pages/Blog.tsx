@@ -22,7 +22,7 @@ export default function Blog() {
   return (
     <div className={classes.root}>
       <Container>
-        <Typography className={classes.customText} variant="h3">About</Typography>
+        <Typography className={classes.customText} variant="h3">Blog</Typography>
       </Container>
     </div>
   );
