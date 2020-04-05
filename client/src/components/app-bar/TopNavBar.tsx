@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import { createStyles, makeStyles, Theme, useTheme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -10,8 +10,8 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       flexGrow: 1,
     },
-    menuButton: {
-      marginRight: theme.spacing(2),
+    appbar: {
+      backgroundColor: theme.palette.primary.main,
     },
     title: {
       flexGrow: 1,
@@ -24,7 +24,7 @@ export default function TopNavBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar color="primary" position="static">
+      <AppBar className={classes.appbar} position="static">
         <Toolbar>
           <Typography align="left" variant="h6" className={classes.title}>
             shreve.dev

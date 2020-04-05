@@ -7,18 +7,16 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       flexGrow: 1,
-      backgroundColor: "#b1a296",
+      backgroundColor: theme.palette.secondary.light,
       paddingTop: "25px",
       paddingBottom: "25px",
     },
     header: {
       flexGrow: 1,
       fontWeight: "bold",
-      color: "#eeeeee",
     },
     content: {
       fontWeight: "bold",
-      color: "#eeeeee",
     }
   }),
 );

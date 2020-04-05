@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     footer: {
       flexGrow: 1,
-      color: "#eeeeee",
     },
   }),
 );
@@ -24,7 +23,7 @@ export default function FooterSection() {
   return (
     <div className={classes.root}>
       <Container>
-        <Typography className={classes.footer} variant="body1">copyright &copy; shreve.dev 2019</Typography>
+        <Typography className={classes.footer} variant="body1">copyright &copy; shreve.dev 2020</Typography>
       </Container>
     </div>
   );

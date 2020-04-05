@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
       fontSize: "large",
       paddingBottom: "50px",
+      backgroundColor: theme.palette.primary.light,
     },
     headshot: {
       marginTop: "25px",
@@ -25,7 +26,6 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
       marginTop: "10px",
       fontWeight: "bold",
-      color: "#eeeeee",
     },
     icons: {
       color: "white",
@@ -49,7 +49,7 @@ export default function LandingHeader() {
     <div className={classes.root}>
       <Container>
         <img className={classes.headshot} src={headshot} alt=""></img>
-        <Typography variant="h2" className={classes.name}>
+        <Typography className={classes.name} variant="h2">
           Eric Shreve
         </Typography>
         <CustomDivider />

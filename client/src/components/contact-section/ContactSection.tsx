@@ -9,20 +9,19 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
       paddingTop: "25px",
       paddingBottom: "25px",
+      backgroundColor: theme.palette.primary.light,
     },
     header: {
       flexGrow: 1,
       fontWeight: "bold",
-      color: "#eeeeee",
     },
     content: {
       fontWeight: "bold",
-      color: "#eeeeee",
     }
   }),
 );
 
-export default function ContentSection() {
+export default function ContactSection() {
   const classes = useStyles();
 
   return (

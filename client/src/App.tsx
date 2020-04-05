@@ -1,20 +1,39 @@
 import React from 'react';
+import { MuiThemeProvider, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import './App.css';
 import LandingHeader from './components/landing/LandingHeader'
 import TopNavBar from './components/app-bar/TopNavBar';
 import AboutSection from './components/about/AboutSection';
-import ContentSection from './components/content-section/ContentSection';
 import FooterSection from './components/footer/FooterSection';
+import ContactSection from './components/contact-section/ContactSection';
 
 function App() {
+  let theme = createMuiTheme({
+    props: {
+      MuiTypography: {
+        color: "textPrimary"
+      }
+    }
+  });
+  theme.palette.secondary = {
+    main: "#b5763f",
+    light: "#cb9f79",
+    dark: "#9f6430",
+    contrastText: "#fff",
+  };
+
+  theme.palette.text.primary = "#eeeeee";
+
   return (
-    <div className="App">
-      <TopNavBar />
-      <LandingHeader />
-      <AboutSection />
-      <ContentSection />
-      <FooterSection />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <TopNavBar />
+        <LandingHeader />
+        <AboutSection />
+        <ContactSection />
+        <FooterSection />
+      </div>
+    </ThemeProvider>
   );
 }
 
