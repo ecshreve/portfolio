@@ -12,6 +12,13 @@ portfolio website project
 
 [] pick color scheme
 
+## steps
+
+- create boilerplate typescript react app
+- install material ui npm package with yarn
+- add links to stylesheets for font and icons
+- install material ui svg icons with yarn
+
 ## resources
 
 - [Create React App](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app)
