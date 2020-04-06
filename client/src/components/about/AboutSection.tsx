@@ -64,7 +64,7 @@ export default function AboutSection() {
           variant="h6"
           >
           I'm a Full Stack Software Engineer from San Francisco, currently 
-          working for <a className={classes.linkText} href="https://www.samsara.com/" target="_blank">Samsara</a>.
+          working for <a className={classes.linkText} href="https://www.samsara.com/" target="_blank" rel="noopener noreferrer">Samsara</a>.
         </Typography>
       </Container>
       <Container className={classes.languagesToolsContainer}>

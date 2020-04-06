@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 
@@ -29,7 +29,6 @@ const useStyles = makeStyles((theme: Theme) =>
       alignItems: "center",
       justifyContent: "center",
       opacity: "0.1",
-      "box-shadow": "10px 10px 30px 3px rgba(0,0,0,0.8)",
     },
     container: {
       position: "relative",

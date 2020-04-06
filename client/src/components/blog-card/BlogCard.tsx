@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { Typography, Container, Card, CardContent, CardMedia, CardActionArea, CardActions, Button } from '@material-ui/core';
-import { Link, LinkProps, useRouteMatch } from 'react-router-dom';
+import { Link, useRouteMatch } from 'react-router-dom';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
