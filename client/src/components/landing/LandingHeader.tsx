@@ -7,7 +7,7 @@ import LinkedIn from '@material-ui/icons/LinkedIn'
 import Email from '@material-ui/icons/Email'
 
 import headshot from '../../img/headshot.jpeg'
-import CustomDivider from '../my-divider/CustomDivider';
+import CustomDivider from '../custom-divider/CustomDivider';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

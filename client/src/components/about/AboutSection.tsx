@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { Typography, Container, Grid } from '@material-ui/core';
-import CustomDivider from '../my-divider/CustomDivider';
+import CustomDivider from '../custom-divider/CustomDivider';
 import Bubble from '../bubble/Bubble';
 
 import golang from '../../img/crop.png';
