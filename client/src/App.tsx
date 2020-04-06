@@ -18,7 +18,7 @@ function App() {
     contrastText: "#fff",
   };
 
-  theme.palette.text.primary = "#eeeeee";
+  theme.palette.text.primary = "#ffffff";
 
   return (
     <ThemeProvider theme={theme}>

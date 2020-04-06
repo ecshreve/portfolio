@@ -14,14 +14,17 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       flexGrow: 1,
       fontSize: "large",
-      paddingTop: "125px",
-      paddingBottom: "125px",
+      paddingTop: "100px",
+      paddingBottom: "150px",
       backgroundColor: theme.palette.primary.light,
     },
     headshot: {
       marginBottom: "25px",
       borderRadius: "50%",
+      borderColor: "#ffffff",
+      borderStyle: "solid",
       width: "15rem",
+      "box-shadow": "5px 5px 15px 10px rgba(0,0,0,0.5)",
     },
     name: {
       flexGrow: 1,
@@ -40,6 +43,7 @@ const useStyles = makeStyles((theme: Theme) =>
       margin: "5px",
       "&:hover": {
         backgroundColor: theme.palette.primary.dark,
+        "box-shadow": "10px 10px 29px 0px rgba(0,0,0,0.8)",
       },
     },
   }),

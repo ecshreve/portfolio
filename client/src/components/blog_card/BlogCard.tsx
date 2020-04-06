@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     cardContentContainer: {
       transition: "all .25s linear",
-     " box-shadow": "0px 1px 2px 0px rgba(0,0,0,0.4)",
+      "box-shadow": "0px 1px 2px 0px rgba(0,0,0,0.4)",
       "&:hover": {
         "box-shadow": "10px 10px 29px 0px rgba(0,0,0,0.8)",
       },
