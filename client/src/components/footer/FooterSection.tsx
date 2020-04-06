@@ -8,10 +8,11 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
       paddingTop: "5px",
       paddingBottom: "5px",
-      backgroundColor: "#5d5c61",
+      backgroundColor: "#cddc39",
     },
     footer: {
       flexGrow: 1,
+      color: "#000000",
     },
   }),
 );

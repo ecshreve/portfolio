@@ -12,9 +12,9 @@ function App() {
     }
   });
   theme.palette.secondary = {
-    main: "#b5763f",
-    light: "#cb9f79",
-    dark: "#9f6430",
+    main: "#4db6ac",
+    light: "#b2dfdb",
+    dark: "#00897b",
     contrastText: "#fff",
   };
 
