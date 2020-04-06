@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     appbar: {
       backgroundColor: theme.palette.primary.main,
+      position: "fixed",
     },
     title: {
       flexGrow: 1,

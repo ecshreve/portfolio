@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme: Theme) =>
       },
     },
     cardContent: {
-      backgroundColor: theme.palette.secondary.light,
+      backgroundColor: theme.palette.secondary.main,
     },
     cardMedia: {
       height: "150px",
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: "5px",
     },
     cardActionArea: {
-      backgroundColor: theme.palette.primary.light,
+      backgroundColor: theme.palette.primary.main,
     },
     cardActionButton: {
       "&:hover": {

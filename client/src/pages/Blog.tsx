@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       flexGrow: 1,
       backgroundColor: theme.palette.primary.light,
-      paddingTop: "50px",
+      paddingTop: "100px",
       paddingBottom: "50px",
     },
     customText: {

@@ -14,8 +14,8 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       flexGrow: 1,
       fontSize: "large",
-      paddingTop: "100px",
-      paddingBottom: "150px",
+      paddingTop: "150px",
+      paddingBottom: "175px",
       backgroundColor: theme.palette.primary.light,
     },
     headshot: {
