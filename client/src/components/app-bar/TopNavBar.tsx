@@ -8,6 +8,7 @@ import { Router, Link, Route } from 'react-router-dom';
 import { createBrowserHistory } from "history";
 import Blog from '../../pages/Blog';
 import Home from '../../pages/Home';
+import TicTacToe from '../../pages/TicTacToe';
 
 const history = createBrowserHistory();
 
@@ -43,7 +44,8 @@ export default function TopNavBar() {
       </div>
       <main>
         <Route exact path="/" component={Home} />
-        <Route path="/blog" component={Blog} />
+        <Route exact path="/blog" component={Blog} />
+        <Route path="/blog/tictactoe" component={TicTacToe} />
       </main>
     </Router>
   );
