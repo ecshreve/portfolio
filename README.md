@@ -1,6 +1,6 @@
 # portfolio
 
-This is a personal website I build for fun as a Rect Application.
+This is a personal website I build for fun as a React Application.
 
 ## Overview
 
