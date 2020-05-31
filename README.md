@@ -1,6 +1,6 @@
 # portfolio
 
-This is a personal website I build for fun as a React Application.
+This is a personal website I build for fun as a React Application. The site is hosted at https://shreve.dev/
 
 ## Overview
 
