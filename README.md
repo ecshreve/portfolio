@@ -1,12 +1,12 @@
 # portfolio
 
-This is a personal website I build for fun as a React Application. The site is hosted at https://shreve.dev/
+This is a personal website I built for fun as a React Application. The site is hosted at https://shreve.dev/
 
 ## Overview
 
-In one sentence, this is React application deployed using [GitHub Pages](https://pages.github.com/), built using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) and UI components from [Material UI](https://material-ui.com/).
+In one sentence, this is React application deployed using [GitHub Pages](https://pages.github.com/), bootstrapped with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) using UI components from [Material UI](https://material-ui.com/).
 
-Previously I had a website that used a simple [Bootstrap](https://getbootstrap.com/) template that I downloaded from one of those _Top 10 Free Bootstrap Templates_ sites, but I've learned a lot about [React](https://reactjs.org/) in the past year and wanted to put that knowledge to use.
+Previously I had a website that used a simple [Bootstrap](https://getbootstrap.com/) template that I downloaded from one of those _Top 10 Free Bootstrap Templates_ sites, but I felt like practicing [React](https://reactjs.org/).
 
 ## Development Steps
 
@@ -14,7 +14,7 @@ These are the main steps I took to create and deploy this application.
 
 ### Setup
 
-The first thing I did was create a new repository on GitHub, and clone the repository locally. When I work on projects for myself I always gave GitHub initialize the repo with a `README.md` file, that way the repo isn't empty and I can clone it.
+The first thing I did was create a new repository on GitHub, and clone the repository locally. When I work on projects for myself I always gave GitHub initialize the repo with a `README.md` file, that way the repo isn't empty.
 
 ```{bash}
 cd
@@ -33,7 +33,7 @@ yarn start
 
 Okay, so, at this point if everything worked perfectly then the basic React app will start up and be accessible at `http://localhost:3000/`. But when does everything work perfectly? The Create React App Documentation is super helpful for getting the basic app set up. 
 
-Here's a few examples of things I Googled up to this point:
+Here's a few things I Googled up to this point:
 
 - "basic typescript react setup"
 - "yarn vs npm"
@@ -41,7 +41,7 @@ Here's a few examples of things I Googled up to this point:
 - "Couldn't find a package.json file in"
 - ...
 
-Great so let's assume we have the basic React working. What's next? Well I want the site to look nice, and while I've done a fair amount of frontend development, I am by no means a designer. That's where [Material UI](https://material-ui.com/) comes in! It provides a ton of great out of the box React components with amazing documentation. So next I followed the [Installation Steps](https://material-ui.com/getting-started/installation/) on the Material UI site.
+Great so let's assume we have the basic React app working. What's next? Well I want the site to look nice, I've done minimal frontend development from scratch, and making something look good is really _really_ hard. That's where [Material UI](https://material-ui.com/) comes in! It provides a ton of great out of the box React components with good documentation. So next I followed the [Installation Steps](https://material-ui.com/getting-started/installation/) on the Material UI site.
 
 ```{bash}
 yarn add @material-ui/core
@@ -50,7 +50,7 @@ yarn add @material-ui/icons
 
 ### Customize the App
 
-Alright so now we have a basic React app, and we have some packages installed that we can import standardized components from. So now it's time to start building. Let's just replace the basic homepage with our own. Replace the contents of `client/src/App.tsx` with:
+Alright so now we have a basic React app, and we have some packages installed that we can import standardized components from. Now it's time to start building some functionality. Let's just replace the basic homepage with our own. To start I replaced the contents of `client/src/App.tsx` with:
 
 ```{javascript}
 import React from 'react';
@@ -101,9 +101,9 @@ Some things that I Googled up to this point:
 
 ### Deploy
 
-Great! So now the app looks good locally and we want to be able to share it. There are a ton of options here, but the simplest and most lightweight one I know of is to use GitHub Pages. Configuring GitHub Pages and the React app to play nicely together does take a bit of tweaking though.
+Great! So now we spent some time adding components and functionality and the app looks good locally. Next we want to put it on the internet! There are a ton of options here, but the simplest and most lightweight one I found is GitHub Pages. Configuring GitHub Pages and the React app to play nicely together does take a bit of tweaking though.
 
-Assuming we've been working for awhile there should be a number of git commits in your local `master` branch. (Or maybe you were better than me and used a `dev` branch and then merged it into `master`) either way let's push the `master` branch.
+Assuming we've been working for awhile there should be a number of git commits in the local `master` branch. (Or maybe you were better than me and used a `dev` branch and then merged it into `master`) either way let's push the `master` branch.
 
 ```{bash}
 git push -u origin master
@@ -145,7 +145,7 @@ Now we can go to the repository settings page (`https://github.com/<username>/<r
 
 Click the link and see the site live!
 
-Okay that's cool, but what if we have a slick custom domain that we want to use. So GitHub Pages has [some documentation](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site) about how to do this. Here's the basic steps:
+Okay that's cool, but what if we have a slick custom domain that we want to use? GitHub Pages has [some documentation](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site) about how to do this. Here's the basic steps:
 
 - Configure DNS records for your domain to point at GitHub Pages (this will will be different depending on which provider you used to buy your domain, Google is your friend here). We should end up with something that looks this:
 
@@ -153,13 +153,13 @@ Okay that's cool, but what if we have a slick custom domain that we want to use.
 | ------|:-----:|:-----:|:----------------|
 | @     | A     | 1h    | 185.199.111.153 |
 
-- Now let's check and make sure that worked
+- Now let's check and make sure that worked.
 
 ```{bash}
 dig mycustomdomain.com +noall +answer
 ```
 
-- Should return a result that looks like 
+- Should return a result that looks something like: 
 
 ```{bash}
 ; <<>> DiG 9.10.6 <<>> mycustomdomain.com +noall +answer
@@ -188,18 +188,18 @@ echo "mycustomdomain.com" >> public/CNAME
 yarn deploy
 ```
 
-Now we can go back to the settings page for this repository in GitHub, and scroll down to the GitHub Pages section to see that it has updated with our custom domain.
+Now we can go back to the settings page for this repository in GitHub, and scroll down to the GitHub Pages section and we should see that it has updated with our custom domain.
 
 Some things I Googled during this section:
 
 - "what is a CNAME file"
-- "how long do DNS changes take to propate"
+- "how long do DNS changes take to propagate"
 - "use google domain with github pages"
 - "deploy react app to github pages basic"
 - ...
 
 ## Conclusion
 
-That's it, we're done! We made a React application and have it accessible at our custom domain name. While there's a handful of things I Googled listed above, the actual number of things I Googled is much MUCH higher, and it would be impossible to list them all here.
+That's it, we're done! We made a React application and have it accessible at our custom domain name. While there's a handful of things I Googled listed above, the actual number of things I Googled is much astronomically higher, and it would be impossible to list them all here.
 
 While I do work with Typescript and React for my job, I wouldn't consider myself an "expert" in either. I spent a lot of time during the beginning of this project Googling, trying something, getting an error message, Googling, reading documentation, reading stackoverflow, fixing something, trying something, and repeating.
