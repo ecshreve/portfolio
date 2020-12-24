@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		root: {
 			maxWidth: "350px",
+			marginBottom: "25px",
 		},
 		cardContentContainer: {
 			transition: "all .25s linear",
@@ -62,7 +63,9 @@ export default function ProjectCard(props: ProjectCardProps) {
 	tagToUrlMap.set("typescript", "https://www.typescriptlang.org/index.html");
 	tagToUrlMap.set("react", "https://reactjs.org/");
 	tagToUrlMap.set("heroku", "https://www.heroku.com/home");
-	tagToUrlMap.set("material-ui", "https://material-ui.com/");
+	tagToUrlMap.set("materialui", "https://material-ui.com/");
+	tagToUrlMap.set("tview", "https://github.com/rivo/tview");
+	tagToUrlMap.set("godoc", "https://godoc.org/");
 
 	const getButtonForTag = (tag: string) => {
 		const tagUrl = tagToUrlMap.get(tag);
