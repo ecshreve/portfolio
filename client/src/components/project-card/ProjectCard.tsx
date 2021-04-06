@@ -66,6 +66,7 @@ export default function ProjectCard(props: ProjectCardProps) {
 	tagToUrlMap.set("materialui", "https://material-ui.com/");
 	tagToUrlMap.set("tview", "https://github.com/rivo/tview");
 	tagToUrlMap.set("godoc", "https://godoc.org/");
+	tagToUrlMap.set("python", "https://www.python.org/");
 
 	const getButtonForTag = (tag: string) => {
 		const tagUrl = tagToUrlMap.get(tag);

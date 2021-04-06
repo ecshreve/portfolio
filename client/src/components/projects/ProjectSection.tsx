@@ -4,6 +4,7 @@ import { Typography, Container, Grid } from "@material-ui/core";
 import CustomDivider from "../custom-divider/CustomDivider";
 
 import civdisc from "../../img/civdisc.png";
+import jeppy from "../../img/jeppy.png";
 import jsoncsv from "../../img/jsoncsv.png";
 import site from "../../img/shreve.png";
 import lifey from "../../img/lifey.png";
@@ -39,6 +40,17 @@ export default function ProjectSection() {
 				</Typography>
 				<CustomDivider />
 				<Grid container className={classes.projectCardContainer}>
+					<Grid item md={4}>
+						<ProjectCard
+							imagePath={jeppy}
+							projectTitle={"Jeppy"}
+							projectDescription={`I'm a big fan of Jeopardy, I ran \
+				out of episodes on Netflix, but I wanted to keep playing. So I built \
+				myself an app that lets me play any historical Jeopardy game whenever I want.`}
+							projectUrl={"https://github.com/ecshreve/jeppy"}
+							tags={["python", "react", "typescript"]}
+						/>
+					</Grid>
 					<Grid item md={4}>
 						<ProjectCard
 							imagePath={jsoncsv}
