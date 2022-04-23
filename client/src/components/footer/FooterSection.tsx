@@ -23,7 +23,7 @@ export default function FooterSection() {
   return (
     <div className={classes.root}>
       <Container>
-        <Typography className={classes.footer} variant="body1">copyright &copy; shreve.dev 2020</Typography>
+        <Typography className={classes.footer} variant="body1">copyright &copy; shreve.dev 2022</Typography>
       </Container>
     </div>
   );
