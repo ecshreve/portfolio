@@ -64,16 +64,7 @@ export default function AboutSection() {
 				<CustomDivider />
 				<Typography className={classes.customText} variant="h6">
 					I'm a Full Stack Software Engineer from San Francisco, currently
-					working for{" "}
-					<a
-						className={classes.linkText}
-						href="https://www.samsara.com/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Samsara
-					</a>
-					.
+					not working, mostly just playing around with code.
 				</Typography>
 			</Container>
 			<Container className={classes.languagesToolsContainer}>
