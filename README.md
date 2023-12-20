@@ -1,6 +1,6 @@
 # ecs-site
 
-This is a personal website I built for fun as a React Application. The site is hosted at https://shreve.dev/
+This is a personal website I built for fun as a React Application. The site is not live anymore, but was previously hosted at https://shreve.dev/, which has been updated as of 12/20/2023.
 
 ## Overview
 
